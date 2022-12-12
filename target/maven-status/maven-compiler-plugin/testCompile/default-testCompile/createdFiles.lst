@@ -1,0 +1,3 @@
+com\smartlk\TestRunner.class
+com\smartlk\steps\LoginSteps.class
+com\smartlk\steps\SearchSteps.class

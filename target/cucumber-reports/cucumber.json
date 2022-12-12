@@ -1,0 +1,138 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-12T05:05:51.292Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.smartlk.steps.LoginSteps.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Test Universal App login with valid credentials",
+        "description": "",
+        "id": "smartlk-test;test-universal-app-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.smartlk.steps.LoginSteps.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5174670400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on welcome page",
+            "match": {
+              "location": "com.smartlk.steps.UATestSteps.userIsOnWelcomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53688900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters \u0027123456\u0027 in ID text box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027123456\u0027",
+                  "offset": 12
+                }
+              ],
+              "location": "com.smartlk.steps.UATestSteps.userEntersIdnumberInIDTextBox(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 91601700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Click user Continue",
+            "match": {
+              "location": "com.smartlk.steps.UATestSteps.clickUserContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5580695200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User enters \u0027RUVI\u0027 and \u0027Ruvi@128\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027RUVI\u0027",
+                  "offset": 12
+                },
+                {
+                  "val": "\u0027Ruvi@128\u0027",
+                  "offset": 23
+                }
+              ],
+              "location": "com.smartlk.steps.UATestSteps.userEntersUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1065328100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Click user login",
+            "match": {
+              "location": "com.smartlk.steps.UATestSteps.clickUserLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26490700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User is on dashboard",
+            "match": {
+              "location": "com.smartlk.steps.UATestSteps.userIsOnDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "SmartLK Test",
+    "description": "",
+    "id": "smartlk-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/SmartLK_Login.feature",
+    "tags": []
+  }
+]
