@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-12-12T05:05:51.292Z",
+        "start_timestamp": "2023-02-27T05:27:48.616Z",
         "before": [
           {
             "result": {
-              "duration": 999500,
+              "duration": 920600,
               "status": "passed"
             },
             "match": {
@@ -15,10 +15,10 @@
             }
           }
         ],
-        "line": 28,
-        "name": "Test Universal App login with valid credentials",
+        "line": 47,
+        "name": "Test SmartLK Login",
         "description": "",
-        "id": "smartlk-test;test-universal-app-login-with-valid-credentials;;2",
+        "id": "smartlk-test;test-smartlk-login;;2",
         "after": [
           {
             "result": {
@@ -34,96 +34,76 @@
         "steps": [
           {
             "result": {
-              "duration": 5174670400,
+              "duration": 1519400100,
               "status": "passed"
             },
-            "line": 20,
-            "name": "User is on welcome page",
+            "line": 41,
+            "name": "Launch SmartLK to register \"https://smartlive.lk/register\"",
             "match": {
-              "location": "com.smartlk.steps.UATestSteps.userIsOnWelcomePage()"
+              "arguments": [
+                {
+                  "val": "\"https://smartlive.lk/register\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.smartlk.steps.RegSteps.launchSmartLKToRegister(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 53688900,
+              "duration": 985000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "User enters \u0027123456\u0027 in ID text box",
+            "line": 42,
+            "name": "Input user data \u0027\"ruvindumadushanka@gmail.com\"\u0027 and \u0027\"rmsk@123\"\u0027",
             "match": {
               "arguments": [
                 {
-                  "val": "\u0027123456\u0027",
-                  "offset": 12
+                  "val": "\u0027\"ruvindumadushanka@gmail.com\"\u0027",
+                  "offset": 16
+                },
+                {
+                  "val": "\u0027\"rmsk@123\"\u0027",
+                  "offset": 52
                 }
               ],
-              "location": "com.smartlk.steps.UATestSteps.userEntersIdnumberInIDTextBox(java.lang.String)"
+              "location": "com.smartlk.steps.RegSteps.inputUserDataUsernameAndPwd(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 91601700,
               "status": "passed"
             },
-            "line": 22,
-            "name": "Click user Continue",
+            "line": 43,
+            "name": "Press Regster",
             "match": {
-              "location": "com.smartlk.steps.UATestSteps.clickUserContinue()"
+              "location": "com.smartlk.steps.RegSteps.pressRegster()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5580695200,
               "status": "passed"
             },
-            "line": 23,
-            "name": "User enters \u0027RUVI\u0027 and \u0027Ruvi@128\u0027",
+            "line": 44,
+            "name": "\u0027\"Ruvindu\"\u0027 verify user is registerd",
             "match": {
               "arguments": [
                 {
-                  "val": "\u0027RUVI\u0027",
-                  "offset": 12
-                },
-                {
-                  "val": "\u0027Ruvi@128\u0027",
-                  "offset": 23
+                  "val": "\u0027\"Ruvindu\"\u0027",
+                  "offset": 0
                 }
               ],
-              "location": "com.smartlk.steps.UATestSteps.userEntersUsernameAndPassword(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1065328100,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "Click user login",
-            "match": {
-              "location": "com.smartlk.steps.UATestSteps.clickUserLogin()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 26490700,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User is on dashboard",
-            "match": {
-              "location": "com.smartlk.steps.UATestSteps.userIsOnDashboard()"
+              "location": "com.smartlk.steps.RegSteps.userVerifyUserIsRegisterd(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@SmokeTest"
+            "name": "@reg"
           }
         ]
       }

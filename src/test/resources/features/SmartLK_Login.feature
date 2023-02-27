@@ -1,7 +1,7 @@
 
   Feature: SmartLK Test
 
-    @ui @login
+    @SmokeTest @login
     Scenario Outline: Test SmartLK Login
       Given Launch SmartLK Login "https://smartlive.lk/login"
       When  Input <email> and <password>
@@ -34,3 +34,15 @@
 #    Scenario: User Logout
 #      Given On click logout
 #      Then User is logged out
+
+
+    @reg
+    Scenario Outline: Test SmartLK Login
+      Given Launch SmartLK to register "https://smartlive.lk/register"
+      When  Input user data '<username>' and '<pwd>'
+      And Press Regster
+      Then '<user>' verify user is registerd
+      Examples:
+        | username                         | pwd   | user      |
+        | "ruvindumadushanka@gmail.com" | "rmsk@123" | "Ruvindu" |
+#        | "ruvindumadushanka@gmail.com" | "rmsk@123" | "Ruvindu" |

@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeTest;
         },
         features = {"src/test/resources/features/"},
         glue = {"com.smartlk.steps"},
-        tags = "@SmokeTest"
+        tags = "@reg"
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
 

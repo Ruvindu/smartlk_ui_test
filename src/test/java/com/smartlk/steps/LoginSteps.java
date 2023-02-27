@@ -4,6 +4,7 @@ import com.smartlk.ENV;
 import com.smartlk.WebDriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -54,4 +55,8 @@ public class LoginSteps {
         System.out.println("end step");
     }
 
+    @And("Press cancel")
+    public void pressCancel() {
+        WebDriverManager.getDriver().findElement(By.tagName("button")).click();
+    }
 }
